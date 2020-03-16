@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Privacy Notice Language SDK Demo</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style-manager.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Privacy Notice Layout SDK Demo</h5>
+  <div class="manager-dropdowns form-row">
+  </div>
+  <nav class="my-2 my-md-0 mr-md-3 ml-md-3">
+    <a class="p-2 text-dark" href="notice-language-default.html">Default</a>
+    <a class="p-2 text-dark" href="notice-language-fr.html">Html</a>
+    <a class="p-2 text-dark" href="notice-language-custom.html">Custom</a>
+  </nav>
+</div>
+<!-- OneTrust Privacy Notice start -->
+
+<!-- Container in which the privacy notice will be rendered -->
+<div id="otnotice-c1d60987-d183-46bb-aad1-8bcf43159775" class="otnotice"></div>
+
+<script src="https://appds7c6e.blob.core.windows.net/privacy-notice-scripts/otnotice-1.0.min.js" type="text/javascript" charset="UTF-8" id="otprivacy-notice-script">
+  settings="eyJjYWxsYmFja1VybCI6Imh0dHBzOi8vcWEtcG9ydGFsLjF0cnVzdC5hcHAvcmVxdWVzdC92MS9wcml2YWN5Tm90aWNlcy9zdGF0cy92aWV3cyJ9";
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+  // To ensure external settings are loaded, use the Initialized promise:
+  OneTrust.NoticeApi.Initialized.then(function() {
+    OneTrust.NoticeApi.LoadNotices(["https://appds7c6e.blob.core.windows.net/9f2f4efb-d1e9-405f-8dda-43054488121b/privacy-notices/c1d60987-d183-46bb-aad1-8bcf43159775.json"]);
+  });
+</script>
+
+<!-- OneTrust Privacy Notice end -->
+
+</body>
+</html>
